@@ -1,4 +1,4 @@
-# Gym Workout Tracker — V1 Requirements
+# RepsnSets — V1 Requirements
 
 ## 1. Product Overview
 
