@@ -1,9 +1,2 @@
 => Purely offline
 => Use client storage
-=> Ability to track the time spent at GYM. Tracks when manually presses the start, also stops when manually stops it. User should able to edit time manually.
-=> Ability to save body wieght daily basis.
-=> Ability to save 'n' days workout plan per week. Also ability to have an alternative for each exercises.
-=> Ability to track each days workout reps and sets.
-=> Stopwatch ability to do plank.
-=> Ability to save exercises into dictonary. Search functionality.
-=> 
