@@ -1,0 +1,49 @@
+.toggle {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+}
+
+.option {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: var(--radius-full);
+  background: transparent;
+  font-size: 15px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition:
+    background-color var(--duration-fast) var(--ease-out),
+    color var(--duration-fast) var(--ease-out),
+    transform var(--duration-fast) var(--ease-out);
+}
+
+.option:hover {
+  color: var(--text-primary);
+}
+
+.option:active {
+  transform: scale(0.92);
+}
+
+.active {
+  background: var(--surface-0);
+  color: var(--accent-text);
+  box-shadow: var(--shadow-md);
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

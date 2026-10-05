@@ -1,0 +1,66 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.label {
+  padding: 0;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.track {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(var(--count), 1fr);
+  padding: 4px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+}
+
+.indicator {
+  position: absolute;
+  inset: 4px auto 4px 4px;
+  width: calc((100% - 8px) / var(--count));
+  background: var(--accent);
+  border-radius: var(--radius-full);
+  transform: translateX(calc(var(--index) * 100%));
+  transition: transform var(--duration-base) var(--ease-spring);
+}
+
+.option {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border-radius: var(--radius-full);
+  font-size: var(--text-md);
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color var(--duration-base) var(--ease-out);
+}
+
+.optionActive {
+  color: var(--accent-fg);
+}
+
+.radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.option:has(.radio:focus-visible) {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

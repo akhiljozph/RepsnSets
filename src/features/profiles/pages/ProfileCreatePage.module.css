@@ -1,0 +1,14 @@
+.back {
+  display: flex;
+  margin: calc(var(--space-2) * -1) 0 calc(var(--space-4) * -1)
+    calc(var(--space-4) * -1);
+}
+
+.error {
+  padding: var(--space-3) var(--space-4);
+  background: var(--danger-soft);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  color: var(--danger);
+  animation: pop-in var(--duration-base) var(--ease-spring) both;
+}

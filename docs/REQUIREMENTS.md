@@ -1112,7 +1112,7 @@ The export format should be JSON.
 Example filename:
 
 ```text
-gym-tracker-backup-2026-10-05.json
+repsnsets-backup-2026-10-05.json
 ```
 
 The exported file should contain all required data to reconstruct the local application state, including:
